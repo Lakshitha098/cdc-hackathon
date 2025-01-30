@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Trends</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trends.html">Trends</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="trends">
+        <h2>Climate Change Trends</h2>
+        <p>Explore various climate trends with real-time data and insights.</p>
+        <div class="chart-container">
+            <canvas id="trendChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Climate Change Analysis | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('trendChart').getContext('2d');
+        const trendChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2000', '2005', '2010', '2015', '2020'],
+                datasets: [{
+                    label: 'Global Temperature (°C)',
+                    data: [14.0, 14.2, 14.5, 14.8, 15.0],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

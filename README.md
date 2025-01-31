@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-"# cdc2" 
-=======
+
 # cdc-hackathon
 
 # Climate Change: Analyzing Trends and Developing Sustainable Solutions
